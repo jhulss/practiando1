@@ -12,6 +12,11 @@ describe("Cambiar monto", () => {
     expect(calcu.calcularCambio(5)).toEqual(5);
   });
 
-  
+  it("deberia poder ingresa y devolver el monto de venta y el efectivo", () => {
+    const calcu = new maquinaCambio;
+    expect(calcu.verificarMontoEfectivo(20, 30)).toEqual([20, 30]);
+  });
+
+
 
 });
