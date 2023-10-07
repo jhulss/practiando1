@@ -1,5 +1,10 @@
-function sumar(a, b) {
-  return a + b;
-}
+class maquinaCambio{
+  
 
-export default sumar;
+  calcularCambio(dinero)
+  {
+    return dinero;
+  }
+
+}
+export default maquinaCambio;
