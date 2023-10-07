@@ -22,5 +22,12 @@ describe("Cambiar monto", () => {
     expect(calcu.verificarMontoEfectivo(null, 30)).toEqual("Error de cantidad, ingrese el y/o datos faltantes");
   });
 
+  it("deberia poder mostrar un mensaje de error si no se ingresa el efectivo cancelado por el cliente", () => {
+    const calcu = new maquinaCambio;
+    expect(calcu.verificarMontoEfectivo(20, null)).toEqual("Error de cantidad, ingrese el y/o datos faltantes");
+  });
+
+  
+
 
 });
