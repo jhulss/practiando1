@@ -15,7 +15,14 @@ class maquinaCambio{
 
   verificarMontoEfectivo(montoVenta, efectivo)
   {
-    return [montoVenta, efectivo];
+    if (montoVenta === null || efectivo === null)
+    {
+      return "Error de cantidad, ingrese el y/o datos faltantes"
+    }
+    else{
+      return [montoVenta, efectivo];
+    }
+      
   }
 
 }
